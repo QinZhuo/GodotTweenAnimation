@@ -16,4 +16,4 @@ config/icon="uid://b45twlbiko1sk"
 
 [editor_plugins]
 
-enabled=PackedStringArray("res://addons/TweenAnimation/plugin.cfg", "res://addons/tween_animation/plugin.cfg")
+enabled=PackedStringArray("res://addons/TweenAnimation/plugin.cfg")

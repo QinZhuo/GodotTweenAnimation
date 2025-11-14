@@ -1,0 +1,10 @@
+[gd_scene load_steps=2 format=3 uid="uid://dns5m0knusac8"]
+
+[ext_resource type="PackedScene" uid="uid://14tanvlq6pdl" path="res://demo/tween_animation.tscn" id="1_d6po2"]
+
+[node name="Demo" type="Node3D"]
+
+[node name="CSGBox3D" type="CSGBox3D" parent="."]
+
+[node name="TweenAnimation" parent="CSGBox3D" node_paths=PackedStringArray("node") instance=ExtResource("1_d6po2")]
+node = NodePath("..")

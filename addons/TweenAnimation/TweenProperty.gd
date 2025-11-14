@@ -59,6 +59,8 @@ func create_tweenr(root_tween: Tween, is_play_back: bool = false):
 			tween_duration = playback_duration
 		else:
 			tween_duration /= 2
+	elif from_value == null:
+		from_value = _get_value()
 	var is_custom_playback := is_play_back and custom_playback
 	var tweener = root_tween.tween_property(node, property, tween_value, tween_duration)
 	tweener.set_trans(transition_type if not is_custom_playback else playback_transition_type)

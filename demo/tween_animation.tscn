@@ -1,0 +1,25 @@
+[gd_scene load_steps=3 format=3 uid="uid://14tanvlq6pdl"]
+
+[ext_resource type="Script" uid="uid://cf7yuu8mfugsu" path="res://addons/TweenAnimation/TweenAnimation.gd" id="1_4h5re"]
+[ext_resource type="Script" uid="uid://cqxuuexdumeed" path="res://addons/TweenAnimation/TweenProperty.gd" id="1_rfspj"]
+
+[node name="TweenAnimation" type="Node" node_paths=PackedStringArray("node")]
+script = ExtResource("1_4h5re")
+node = NodePath("")
+metadata/_custom_type_script = "uid://cf7yuu8mfugsu"
+
+[node name="Position_x" type="Node" parent="." node_paths=PackedStringArray("node")]
+script = ExtResource("1_rfspj")
+final_value = 1.0
+from_value = 0.0
+node = NodePath("")
+metadata/_custom_type_script = "uid://cqxuuexdumeed"
+
+[node name="_scale" type="Node" parent="." node_paths=PackedStringArray("node")]
+script = ExtResource("1_rfspj")
+property = ":scale"
+final_value = Vector3(1.5, 1.5, 1.5)
+transition_type = 9
+from_value = Vector3(1, 1, 1)
+node = NodePath("")
+metadata/_custom_type_script = "uid://cqxuuexdumeed"
