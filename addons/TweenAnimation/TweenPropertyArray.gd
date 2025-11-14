@@ -12,7 +12,7 @@ func create_property_tweenr(tween: Tween, is_play_back: bool = false):
 	var subtween = create_tween()
 	tween.tween_subtween(subtween)
 	var from = from_value
-	var value_indexs: Array = range(0, final_values.size()) if not is_play_back else range(final_values.size() - 1, -1, -1)
+	var value_indexs: Array = range(0, final_values.size()) if not is_play_back else range(final_values.size() - 2, -1, -1)
 	var tween_duration := duration / final_values.size()
 	if is_play_back:
 		if custom_playback:
