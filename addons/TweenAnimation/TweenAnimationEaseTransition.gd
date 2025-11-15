@@ -73,6 +73,7 @@ func _draw_string(pos: Vector2, text: String, font_size: int, color: Color):
 
 func _draw_tween():
 	_draw_string(offset * Vector2(1, 1.2), "Godot Tween Animation Ease Transition", 58, Color.CORNFLOWER_BLUE)
+	_draw_string(Vector2(_get_position(4).x, offset.y * 1.6), "draw with Godot " + Engine.get_version_info().string + "   by QinZhuo", 20, Color.CORNFLOWER_BLUE.darkened(0.5))
 	for ease_type in ease_types.keys():
 		_draw_rect(Vector2(_get_position(8 + ease_type).x, offset.y), ease_types[ease_type].color, ease_types[ease_type].name)
 	var index := 0
