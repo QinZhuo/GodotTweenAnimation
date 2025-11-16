@@ -1,8 +1,8 @@
 # Godot Tween Animation 
 [English](https://github.com/QinZhuo/TweenAnimation/blob/master/README.md) | [中文](https://github.com/QinZhuo/TweenAnimation/blob/master/zh/README.md)
 > This is a plugin for using Godot Tween in a node-based way. A more convenient and simpler way to use Tween.
-* [Github](https://github.com/QinZhuo/TweenAnimation) 
-* [Asset library](https://godotengine.org/asset-library/asset/4480) 
+
+[Github](https://github.com/QinZhuo/TweenAnimation) • [Asset library](https://godotengine.org/asset-library/asset/4480) 
 ## Advantage
 * You can view the Tween effects in real-time in the editor.
 * Easily and quickly adjust the order and effects of multiple complex Tweens without modifying code.

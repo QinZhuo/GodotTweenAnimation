@@ -1,8 +1,8 @@
 # Godot Tween Animation
 [English](https://github.com/QinZhuo/TweenAnimation/blob/master/README.md) | [中文](https://github.com/QinZhuo/TweenAnimation/blob/master/zh/README.md)
 > 这是一个以节点方式使用 Godot Tween 的插件。一种更方便、更简单的 Tween 使用方法。
-* [Github](https://github.com/QinZhuo/TweenAnimation)
-* [资源库](https://godotengine.org/asset-library/asset/4480)
+
+[Github](https://github.com/QinZhuo/TweenAnimation) • [资源库](https://godotengine.org/asset-library/asset/4480)
 ## 优势
 * 您可以在编辑器中实时查看 Tween 效果。
 * 无需修改代码，即可轻松快速地调整多个复杂 Tween 的顺序和效果。
