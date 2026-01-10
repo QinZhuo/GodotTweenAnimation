@@ -2,8 +2,6 @@
 @icon("res://addons/TweenAnimation/icon.png")
 class_name TweenAnimation extends Node
 
-
-
 @export_tool_button("Play") var play_button := play
 
 @export_tool_button("Playback") var play_back_button := playback
@@ -27,7 +25,7 @@ func play() -> Tween:
 	_create_tweenr(cur_tween)
 	return cur_tween
 
-func playback():
+func playback() -> Tween:
 	if cur_tween and cur_tween.is_running():
 		cur_tween.kill()
 	cur_tween = create_tween()
