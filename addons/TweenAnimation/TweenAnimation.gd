@@ -2,10 +2,11 @@
 @icon("res://addons/TweenAnimation/icon.png")
 class_name TweenAnimation extends Node
 
-@export_tool_button("Play Test") var play_test_button := func():
-	await play().finished
-	await get_tree().create_timer(1).timeout
-	await playback().finished
+
+
+@export_tool_button("Play") var play_button := play
+
+@export_tool_button("Playback") var play_back_button := playback
 
 @export_group("Child Tween")
 @export var is_parallel: bool
