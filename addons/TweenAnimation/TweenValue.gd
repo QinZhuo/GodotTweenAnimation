@@ -10,7 +10,7 @@ class_name TweenValue extends TweenAnimation
 
 @export var playback_duration: float = 0.2
 
-@export var transition_type: Tween.TransitionType = Tween.TRANS_SINE
+@export var transition_type: Tween.TransitionType = Tween.TRANS_LINEAR
 
 @export var ease_type: Tween.EaseType = Tween.EaseType.EASE_OUT
 
@@ -25,6 +25,8 @@ func _get_tween_duration() -> float:
 	return tween_duration
 
 func _set_tweener_curve(tweener: Tweener):
+	if not transition_type:
+		return
 	tweener.set_trans(transition_type)
 	tweener.set_ease(ease_type)
 

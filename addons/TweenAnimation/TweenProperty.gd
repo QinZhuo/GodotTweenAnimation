@@ -10,7 +10,7 @@ class_name TweenProperty extends TweenValue
 			node = parent
 		return node
 
-@export var property: String = "position:x"
+@export var property: String = "scale"
 
 @export_tool_button("Select Property") var select_property := func():
 	if Engine.is_editor_hint():

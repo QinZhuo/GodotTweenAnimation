@@ -19,8 +19,9 @@ func _create_tweenr(tween: Tween):
 		subtween.tween_property(node, property, to, tween_duration)
 	if is_playback:
 		subtween.tween_property(node, property, from, tween_duration)
-	subtween.set_trans(transition_type)
-	subtween.set_ease(ease_type)
+	if transition_type:
+		subtween.set_trans(transition_type)
+		subtween.set_ease(ease_type)
 	_create_child_subtween(tween)
 
 func _validate_property(p: Dictionary):
