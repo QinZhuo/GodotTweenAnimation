@@ -18,8 +18,6 @@ func _get_tween_from_value():
 	return from_value if not is_playback else final_value
 
 func _get_tween_final_value():
-	if from_value == null and is_playback:
-		from_value = final_value
 	return final_value if not is_playback else from_value
 
 func _get_tween_duration() -> float:
