@@ -17,9 +17,15 @@ func _process(delta):
 		if cur_tween and cur_tween.is_running():
 			cur_tween.custom_step(delta)
 
-func play() -> Tween:
+func reset():
+	for child: TweenAnimation in get_children():
+		child.reset()
+
+func play(reset_tween: bool = false) -> Tween:
 	if cur_tween and cur_tween.is_running():
 		cur_tween.kill()
+	if reset_tween:
+		reset()
 	cur_tween = create_tween()
 	is_playback = false
 	_create_tweenr(cur_tween)
