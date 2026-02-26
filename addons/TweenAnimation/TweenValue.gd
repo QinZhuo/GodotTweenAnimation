@@ -35,3 +35,7 @@ func play_from(new_from_value: Variant = null):
 		from_value = new_from_value
 	reset()
 	play()
+
+func play_value(value, var_name: String = "intensity"):
+	set(var_name, value)
+	play()
