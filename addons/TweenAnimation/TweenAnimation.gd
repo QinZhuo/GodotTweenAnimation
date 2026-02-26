@@ -64,6 +64,9 @@ func _create_child_subtween(tween: Tween):
 	tween.tween_subtween(subtween)
 	subtween.set_parallel(is_parallel)
 	for index in index_array:
+		var child := get_child(index)
+		if not child is TweenAnimation:
+			continue
 		var child_tween: TweenAnimation = get_child(index)
 		child_tween.is_playback = is_playback
 		child_tween._create_tweenr(subtween)
